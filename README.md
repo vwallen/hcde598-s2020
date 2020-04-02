@@ -1,2 +1,3 @@
-# hcde598-s2020
-Profile site for HCDE598 Digital Fabrication
+# HCDE 598 - Digital Fabrication
+
+All blame and praise can be directed to Victor Allen <[vwallen@uw.edu](mailto:vwallen@uw.edu)>
