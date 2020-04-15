@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCDE Digital Fabrication Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .body-text p {
+            max-width: 30rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .composer-column figure {
+            margin-bottom: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <div class="body-text">
+                        <p class="title">A1: Cookie Cutters</p>
+                        <p>When I first moved to Seattle, I knew nothing about opera.</p>
+                        <p>In 2012, Seattle Opera performed a production of Puccini's <a href="http://seattleopera50.com/opera/2012-turnandot/">Turandot</a>, which my wife and I attended on a whim. Much to my surprise, I <i>loved it</i>. The next performances we attended were the complete Wagner Ring Cycle (15 hours of opera in one week!). This was a lot, or as a friend put it, "You don't just run a 5K and decide to sign up for a marathon!"</p>
+                        <p>Since then, we have become regular attendees of Seattle Opera, which sadly has cancelled the remainder of the season due to the pandemic. I decided to channel my disappointment into baked goods, and have chosen to create cookie portaits of well-known composers: <a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi">Giuseppe Verdi</a>, <a href="https://en.wikipedia.org/wiki/Giacomo_Puccini">Giacomo Puccini</a>, and <a href="https://en.wikipedia.org/wiki/Richard_Wagner">Richard Wagner</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-9">
+                <div class="tile is-child box">
+                    <p class="title">Process</p>
+                    <ol style="margin: 1rem;">
+                        <li><h3>Photoshop</h3> Initial image treatment: increase contrast, remove background, add perimeter outline, crop</li>
+                        <li><h3>Clip Studio Paint</h3> Illustration: draw over source image</li>
+                        <li><h3>Illustrator</h3> Convert to curves: outline illustration, initial shape cleanup to simplify curves</li>
+                        <li><h3>Rhinoceros</h3> 3D modeling: extrude surfaces, create perimeter cutting surface</li>
+                        <li><h3>Cura</h3> Prepare for printing: slicing, printing profile, gcode</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <p class="title">Files</p>
+                    <ul style="margin: 1rem;">
+                        <li>
+                            <h3>Verdi</h3>
+                            <ul>
+                                <li><a href="images/cookie-cutters/verdi-01-source-6x6.jpg">Original Source (JPG)</a></li>
+                                <li><a href="images/cookie-cutters/verdi.3dm">Rhinoceros Drawing (3DM)</a></li>
+                                <li><a href="images/cookie-cutters/verdi.stl">3D Model (STL)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Puccini</h3>
+                            <ul>
+                                <li><a href="images/cookie-cutters/puccini-01-source-6x6.jpg">Original Source (JPG)</a></li>
+                                <li><a href="images/cookie-cutters/puccini.stl">Rhinoceros Drawing (3DM)</a></li>
+                                <li><a href="images/cookie-cutters/puccini.stl">3D Model (STL)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Wagner</h3>
+                            <ul>
+                                <li><a href="images/cookie-cutters/wagner-01-source-6x6.jpg">Original Source (JPG)</a></li>
+                                <li><a href="images/cookie-cutters/wagner.3dm">Rhinoceros Drawing (3DM)</a></li>
+                                <li><a href="images/cookie-cutters/wagner.stl">3D Model (STL)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box composer-column">
+                    <h3>Giuseppe Verdi</h3>
+                    <div class="body-text" style="height: 8rem;">
+                        <p>Verdi is my favorite opera composer. His work includes works such as Aida and La Traviata.</p>
+                        <p>My dad calls him "Joe Green".</p>
+                    </div>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/verdi-01-source-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/verdi-02-cropped-outlined-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/verdi-03-drawing-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/verdi-04-render-6x6.jpg">
+                    </figure>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child box composer-column">
+                    <h3>Giacomo Puccini</h3>
+                    <div class="body-text" style="height: 8rem;">
+                        <p>Puccini composed some of the most emotionally moving operas, including La bohème, Tosca, and Madama Butterfly.</p>
+                        <p>He made bowler hats look <i>good</i>.</p>
+                    </div>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/puccini-01-source-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/puccini-02-cropped-outlined-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/puccini-03-drawing-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/puccini-04-render-6x6.jpg">
+                    </figure>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child box composer-column">
+                    <h3>Richard Wagner</h3>
+                    <div class="body-text" style="height: 8rem;">
+                        <p>Wagner is known for dramatic, bombastic operas in the Romantic tradition. His masterpiece is the Ring Cycle.</p>
+                        <p>His best known opera is <a href="https://www.youtube.com/watch?v=weHNnsMY82A">"Kill the Wabbit".</a></p>
+                    </div>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/wagner-01-source-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/wagner-02-cropped-outlined-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/wagner-03-drawing-6x6.jpg">
+                    </figure>
+                    <figure class="image is-square">
+                        <img src="images/cookie-cutters/wagner-04-render-6x6.jpg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+</body>
+</html>
+
