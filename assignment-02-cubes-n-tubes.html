@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCDE Digital Fabrication Projects: Assignment 2, Cubes 'n' Tubes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .body-text p {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        table#results-table {
+            /*width: 1500px;*/
+        }
+        table#results-table th {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .thing-cell {
+            min-width: 10rem;
+        }
+
+        .notes-cell {
+            min-width: 15rem;
+        }
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+
+        <div class="level">
+            <div class="level-item-left"><a href="index.html">&larr; back</a></div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box columns">
+                    <div class="column body-text">
+                        <h2 class="title is-size-2">Assignment 2: Cubes 'n' Tubes</h2>
+                        <p>Is it a cube or is it a tube?</p>
+                    </div>
+                    <div class="column">
+                        <!--                            <figure class="image is-16by9">-->
+                        <!--                                <img src="images/cookie-cutters/header.jpg">-->
+                        <!--                            </figure>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <p class="title">Print Runs</p>
+                    <div class="table-container">
+                        <table id="results-table" class="table is-striped is-hoverable">
+                            <thead>
+                            <tr>
+                                <th rowspan="2">#</th>
+                                <th rowspan="2">Thing</th>
+                                <th rowspan="2">Cube?</th>
+                                <th rowspan="2">Tube?</th>
+                                <th rowspan="2">Settings</th>
+                                <th colspan="2">Print Time</th>
+                                <th rowspan="2">W</th>
+                                <th rowspan="2">H</th>
+                                <th rowspan="2">D</th>
+                                <th rowspan="2">Results</th>
+                            </tr>
+                            <tr>
+                                <td>Estimated</td>
+                                <td>Actual</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="thing-cell">2 cm cube</div>
+                                </td>
+                                <td>yes</td>
+                                <td>no</td>
+                                <td nowrap="1">
+                                    Low Quality
+                                    <ul class="content">
+                                        <li>+ initial layer speed: 15 mm/s</li>
+                                        <li>+ use brim, 4 mm width</li>
+                                    </ul>
+                                </td>
+                                <td nowrap="1">21m</td>
+                                <td nowrap="1">22m 16s</td>
+                                <td nowrap="1">19.81-19.99 mm</td>
+                                <td nowrap="1">19.60-19.72 mm</td>
+                                <td nowrap="1">20.13-20.19 mm</td>
+                                <td class="notes-cell">Layers and top pattern very visible. Brim came away cleanly, but left a border at the bottom that needs to be trimmed/filed off. Faces of cube slightly recessed from the corners.</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="thing-cell">2 cm cube</div>
+                                </td>
+                                <td>yes</td>
+                                <td>no</td>
+                                <td nowrap="1">
+                                    Standard Quality
+                                    <ul class="content">
+                                        <li>+ initial layer speed: 15 mm/s</li>
+                                        <li>+ use brim, 4 mm width</li>
+                                    </ul>
+                                </td>
+                                <td nowrap="1">31m</td>
+                                <td nowrap="1">31m 40s</td>
+                                <td nowrap="1">19.87-20.04 mm</td>
+                                <td nowrap="1">19.69-19.73 mm</td>
+                                <td nowrap="1">20.08-20.21 mm</td>
+                                <td class="notes-cell">Layers noticeably smaller. Brim did not come away cleanly (needed to be trimmed). Cube faces are smooth relative to the corners (no inset)</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <div class="thing-cell">2 cm cube</div>
+                                </td>
+                                <td>yes</td>
+                                <td>no</td>
+                                <td nowrap="1">
+                                    Super Quality
+                                    <ul class="content">
+                                        <li>+ initial layer speed: 15 mm/s</li>
+                                        <li>+ use brim, 4 mm width</li>
+                                    </ul>
+                                </td>
+                                <td nowrap="1">51m</td>
+                                <td nowrap="1">50m 56s</td>
+                                <td nowrap="1">19.71-19.77 mm</td>
+                                <td nowrap="1">19.54-19.57 mm</td>
+                                <td nowrap="1">19.96-20.01 mm</td>
+                                <td>Very fine layers, probably would be masked by paint. Brim still leaves lingering traces. Dimensions are more precise and the crispest corners.</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>A 2cm cube with a concentric top and bottom layer</td>
+                                <td>yes</td>
+                                <td>no</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>A tube 2cm in diameter and .5cm high with a single extrusion wall thickness</td>
+                                <td>no</td>
+                                <td>yes</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>A tube 2cm in diameter and .5cm high with a double extrusion wall thickness and
+                                    random z-seam alignment
+                                </td>
+                                <td>no</td>
+                                <td>yes</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>7</td>
+                                <td>A cylinder 2cm in diameter exported with a 0.1cm tolerance, printed on its round
+                                    side with supports
+                                </td>
+                                <td>no</td>
+                                <td>no</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>A cylinder 2cm in in diameter exported with a 0.005cm tolerance</td>
+                                <td>no</td>
+                                <td>no</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>9</td>
+                                <td>20.0mm +/- 0.5mm cube with a 5.0mm +/- 0.5mm hole through it</td>
+                                <td>yes</td>
+                                <td>yes</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
+

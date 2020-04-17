@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCDE Digital Fabrication Projects: Assignment 2, Cubes 'n' Tubes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .body-text p {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        table#results-table {
+            /*width: 1500px;*/
+        }
+        table#results-table th {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .thing-cell {
+            min-width: 10rem;
+        }
+
+        .notes-cell {
+            min-width: 15rem;
+        }
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+
+        <div class="level">
+            <div class="level-item-left"><a href="index.html">&larr; back</a></div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box columns">
+                    <div class="column body-text">
+                        <h2 class="title is-size-2">Bed Levelling Test Pattern</h2>
+                        <p>This is a personal level test pattern to deal with some high spots on my bed. The print head stops at each point and gives you an opportunity to check the level.</p>
+                        <p>Based on a file from <a href="https://filamentfriday.com">FilamentFriday.com</a></p>
+                        <div class="box">
+                            <h2 class="is-size-3">Files</h2>
+                            <ul>
+                                <li><a href="level-test/VWA_level_test.gcode"><b>Ender 3 G-Code File</b></a></li>
+                                <li><a href="level-test/test-pattern.svg">Illustrator SVG Source</a></li>
+                                <li><a href="https://github.com/vwallen/hcde598-s2020/level-test/test-pattern-gcode.py">SVG to G-Code Conversion Script</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column is-5">
+                        <figure class="image is-square">
+                            <img src="level-test/test-pattern.svg">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
+
