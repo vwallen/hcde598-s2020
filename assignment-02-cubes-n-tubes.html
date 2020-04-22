@@ -87,242 +87,238 @@
                 </div>
             </div>
         </div>
+        <div class="box">
+            <p class="title">Print Runs</p>
+            <div id="results-container" class="table-container">
+                <table id="results-table" class="table is-striped is-hoverable">
+                    <thead>
+                    <tr>
+                        <th rowspan="2">#</th>
+                        <th rowspan="2">Thing</th>
+                        <th rowspan="2">Settings</th>
+                        <th rowspan="2">Results</th>
+                        <th rowspan="2">Cube?</th>
+                        <th rowspan="2">Tube?</th>
+                        <th rowspan="2">W</th>
+                        <th rowspan="2">H</th>
+                        <th rowspan="2">D</th>
+                        <th colspan="2">Print Time</th>
+                    </tr>
+                    <tr>
+                        <th>Estimated</th>
+                        <th>Actual</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="thing-cell">2 cm cube</td>
+                        <td>
+                            Low Quality
+                            <ul class="content">
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ use brim, 4 mm width</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">Layers and top pattern very visible. Brim came away cleanly, but
+                            left a border at the bottom that needs to be trimmed/filed off. Faces of cube
+                            slightly recessed from the corners.
+                        </td>
+                        <td>yes</td>
+                        <td>no</td>
+                        <td>19.81-19.99 mm</td>
+                        <td>19.60-19.72 mm</td>
+                        <td>20.13-20.19 mm</td>
+                        <td>21m</td>
+                        <td>22m 16s</td>
+                    </tr>
 
-<!--        <div class="tile is-ancestor">-->
-<!--            <div class="tile is-parent">-->
-<!--                <div class="tile is-child box">-->
-                <div class="box">
-                    <p class="title">Print Runs</p>
-                    <div id="results-container" class="table-container">
-                        <table id="results-table" class="table is-striped is-hoverable">
-                            <thead>
-                            <tr>
-                                <th rowspan="2">#</th>
-                                <th rowspan="2">Thing</th>
-                                <th rowspan="2">Settings</th>
-                                <th rowspan="2">Results</th>
-                                <th rowspan="2">Cube?</th>
-                                <th rowspan="2">Tube?</th>
-                                <th rowspan="2">W</th>
-                                <th rowspan="2">H</th>
-                                <th rowspan="2">D</th>
-                                <th colspan="2">Print Time</th>
-                            </tr>
-                            <tr>
-                                <th>Estimated</th>
-                                <th>Actual</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td class="thing-cell">2 cm cube</td>
-                                <td>
-                                    Low Quality
-                                    <ul class="content">
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ use brim, 4 mm width</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">Layers and top pattern very visible. Brim came away cleanly, but
-                                    left a border at the bottom that needs to be trimmed/filed off. Faces of cube
-                                    slightly recessed from the corners.
-                                </td>
-                                <td>yes</td>
-                                <td>no</td>
-                                <td>19.81-19.99 mm</td>
-                                <td>19.60-19.72 mm</td>
-                                <td>20.13-20.19 mm</td>
-                                <td>21m</td>
-                                <td>22m 16s</td>
-                            </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="thing-cell">2 cm cube
+                        </td>
+                        <td>
+                            Standard Quality
+                            <ul class="content">
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ use brim, 4 mm width</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">Layers noticeably smaller. Brim did not come away cleanly (needed
+                            to be trimmed). Cube faces are smooth relative to the corners (no inset)
+                        </td>
+                        <td>yes</td>
+                        <td>no</td>
+                        <td>19.87-20.04 mm</td>
+                        <td>19.69-19.73 mm</td>
+                        <td>20.08-20.21 mm</td>
+                        <td>31m</td>
+                        <td>31m 40s</td>
+                    </tr>
 
-                            <tr>
-                                <td>2</td>
-                                <td class="thing-cell">2 cm cube
-                                </td>
-                                <td>
-                                    Standard Quality
-                                    <ul class="content">
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ use brim, 4 mm width</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">Layers noticeably smaller. Brim did not come away cleanly (needed
-                                    to be trimmed). Cube faces are smooth relative to the corners (no inset)
-                                </td>
-                                <td>yes</td>
-                                <td>no</td>
-                                <td>19.87-20.04 mm</td>
-                                <td>19.69-19.73 mm</td>
-                                <td>20.08-20.21 mm</td>
-                                <td>31m</td>
-                                <td>31m 40s</td>
-                            </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="thing-cell">2 cm cube
+                        </td>
+                        <td>
+                            Super Quality
+                            <ul class="content">
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ use brim, 4 mm width</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">Very fine layers, probably would be masked by paint. Brim still
+                            leaves lingering traces. Dimensions are more precise and the crispest corners.
+                        </td>
+                        <td>yes</td>
+                        <td>no</td>
+                        <td>19.71-19.77 mm</td>
+                        <td>19.54-19.57 mm</td>
+                        <td>19.96-20.01 mm</td>
+                        <td>51m</td>
+                        <td>50m 56s</td>
+                    </tr>
 
-                            <tr>
-                                <td>3</td>
-                                <td class="thing-cell">2 cm cube
-                                </td>
-                                <td>
-                                    Super Quality
-                                    <ul class="content">
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ use brim, 4 mm width</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">Very fine layers, probably would be masked by paint. Brim still
-                                    leaves lingering traces. Dimensions are more precise and the crispest corners.
-                                </td>
-                                <td>yes</td>
-                                <td>no</td>
-                                <td>19.71-19.77 mm</td>
-                                <td>19.54-19.57 mm</td>
-                                <td>19.96-20.01 mm</td>
-                                <td>51m</td>
-                                <td>50m 56s</td>
-                            </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="thing-cell">2cm cube</td>
+                        <td>
+                            Super Quality
+                            <ul class="content">
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ concentric top and bottom layer</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">Layers are very fine. Tolerance of cube is high, except for
+                            bottom layer which is an outlier. Top edges cleaner than previous cubes. Using skirt
+                            rather than brim much nicer to deal with.
+                        </td>
+                        <td>yes</td>
+                        <td>no</td>
+                        <td>19.93 - 20.35 mm</td>
+                        <td>19.54 - 19.65 mm</td>
+                        <td>20.02 - 20.53 mm</td>
+                        <td>51m</td>
+                        <td>50m 27s</td>
+                    </tr>
 
-                            <tr>
-                                <td>4</td>
-                                <td class="thing-cell">2cm cube</td>
-                                <td>
-                                    Super Quality
-                                    <ul class="content">
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ concentric top and bottom layer</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">Layers are very fine. Tolerance of cube is high, except for
-                                    bottom layer which is an outlier. Top edges cleaner than previous cubes. Using skirt
-                                    rather than brim much nicer to deal with.
-                                </td>
-                                <td>yes</td>
-                                <td>no</td>
-                                <td>19.93 - 20.35 mm</td>
-                                <td>19.54 - 19.65 mm</td>
-                                <td>20.02 - 20.53 mm</td>
-                                <td>51m</td>
-                                <td>50m 27s</td>
-                            </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="thing-cell">2cm x 0.5cm tube</td>
+                        <td>
+                            Super Quality
+                            <ul class="content">
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ single extrusion wall thickness</li>
+                                <li>+ "vase mode"</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">Wall thickness 0.33 - 0.35 mm, except first couple of layers
+                            which are 0.85-0.87 mm.
+                        </td>
+                        <td>no</td>
+                        <td>yes</td>
+                        <td>20.05 - 20.23 mm</td>
+                        <td>4.75 - 4.77 mm</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>9m 7s</td>
+                    </tr>
 
-                            <tr>
-                                <td>5</td>
-                                <td class="thing-cell">2cm x 0.5cm tube</td>
-                                <td>
-                                    Super Quality
-                                    <ul class="content">
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ single extrusion wall thickness</li>
-                                        <li>+ "vase mode"</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">Wall thickness 0.33 - 0.35 mm, except first couple of layers
-                                    which are 0.85-0.87 mm.
-                                </td>
-                                <td>no</td>
-                                <td>yes</td>
-                                <td>20.05 - 20.23 mm</td>
-                                <td>4.75 - 4.77 mm</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>9m 7s</td>
-                            </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="thing-cell">2cm x 0.5cm tube</td>
+                        <td>
+                            Super Quality
+                            <ul class="content">
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ double extrusion wall thickness</li>
+                                <li>+ z-seam: random</li>
+                                <li>+ "vase mode"</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">First layer printed at double thickness (inner surface), would a
+                            raft have helped?
+                        </td>
+                        <td>no</td>
+                        <td>yes</td>
+                        <td>19.78 - 20.02 mm</td>
+                        <td>4.71 - 4.78 mm</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>10m 31s</td>
+                    </tr>
 
-                            <tr>
-                                <td>6</td>
-                                <td class="thing-cell">2cm x 0.5cm tube</td>
-                                <td>
-                                    Super Quality
-                                    <ul class="content">
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ double extrusion wall thickness</li>
-                                        <li>+ z-seam: random</li>
-                                        <li>+ "vase mode"</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">First layer printed at double thickness (inner surface), would a
-                                    raft have helped?
-                                </td>
-                                <td>no</td>
-                                <td>yes</td>
-                                <td>19.78 - 20.02 mm</td>
-                                <td>4.71 - 4.78 mm</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>10m 31s</td>
-                            </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="thing-cell">2cm x 0.5cm cylinder, 0.1cm tolerance</td>
+                        <td>
+                            Super Quality
+                            <ul class="content">
+                                <li>+ printed on its side</li>
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ double extrusion wall thickness</li>
+                                <li>+ z-seam: random</li>
+                                <li>+ w/ supports</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">First attempt forgot to turn off "vase mode", disastrous! Bottom
+                            side was flat. Second attempt came out better, but the supports are difficult to
+                            remove and the base is very flat. Excluding the support artifacts, the height is less than a
+                            layer-height of tolerance.
+                        </td>
+                        <td>no</td>
+                        <td>no</td>
+                        <td>19.20 - 20.02mm</td>
+                        <td>4.99 - 5.01</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>32m 48s</td>
+                    </tr>
 
-                            <tr>
-                                <td>7</td>
-                                <td class="thing-cell">2cm x 0.5cm cylinder, 0.1cm tolerance</td>
-                                <td>
-                                    Super Quality
-                                    <ul class="content">
-                                        <li>+ printed on its side</li>
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ double extrusion wall thickness</li>
-                                        <li>+ z-seam: random</li>
-                                        <li>+ w/ supports</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">First attempt forgot to turn off "vase mode", disastrous! Bottom
-                                    side was flat. Second attempt came out better, but the supports are difficult to
-                                    remove and the base is very flat. Excluding the support artifacts, the height is less than a layer-height of tolerance.
-                                </td>
-                                <td>no</td>
-                                <td>no</td>
-                                <td>19.20 - 20.02mm</td>
-                                <td>4.99 - 5.01</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>32m 48s</td>
-                            </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="thing-cell">2cm x 0.5cm cylinder, 0.1cm tolerance</td>
+                        <td>
+                            Super Quality
+                            <ul class="content">
+                                <li>+ initial layer speed: 15 mm/s</li>
+                                <li>+ double extrusion wall thickness</li>
+                                <li>+ z-seam: random</li>
+                                <li>+ concentric top/bottom layers</li>
+                                <li>+ raft</li>
+                            </ul>
+                        </td>
+                        <td class="notes-cell">Overall nice and solid, the concentric pattern looks good on circular
+                            pieces. The raft did not want to come off this time.
+                        </td>
+                        <td>no</td>
+                        <td>no</td>
+                        <td>19.91 - 20.10 mm</td>
+                        <td>4.88 - 5.02 mm</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>28m 27s</td>
+                    </tr>
 
-                            <tr>
-                                <td>8</td>
-                                <td class="thing-cell">2cm x 0.5cm cylinder, 0.1cm tolerance</td>
-                                <td>
-                                    Super Quality
-                                    <ul class="content">
-                                        <li>+ initial layer speed: 15 mm/s</li>
-                                        <li>+ double extrusion wall thickness</li>
-                                        <li>+ z-seam: random</li>
-                                        <li>+ concentric top/bottom layers</li>
-                                        <li>+ raft</li>
-                                    </ul>
-                                </td>
-                                <td class="notes-cell">Overall nice and solid, the concentric pattern looks good on circular pieces. The raft did not want to come off this time.</td>
-                                <td>no</td>
-                                <td>no</td>
-                                <td>19.91 - 20.10 mm</td>
-                                <td>4.88 - 5.02 mm</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>28m 27s</td>
-                            </tr>
-
-                            <tr>
-                                <td>9</td>
-                                <td class="thing-cell">20.0mm &pm;0.5mm cube with a 5.0mm &pm;0.5mm</td>
-                                <td></td>
-                                <td class="notes-cell"></td>
-                                <td>yes</td>
-                                <td>yes</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                    <tr>
+                        <td>9</td>
+                        <td class="thing-cell">20.0mm &pm;0.5mm cube with a 5.0mm &pm;0.5mm</td>
+                        <td></td>
+                        <td class="notes-cell"></td>
+                        <td>yes</td>
+                        <td>yes</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-<!--        </div>-->
-
-<!--    </div>-->
+        </div>
+    </div>
 </section>
 </body>
 </html>
