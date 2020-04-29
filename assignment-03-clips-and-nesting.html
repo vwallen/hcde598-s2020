@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCDE Digital Fabrication Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .body-text p {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .composer-column figure {
+            margin-bottom: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+
+        <div class="level">
+            <div class="level-item-left"><a href="index.html">&larr; back</a></div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box columns">
+                    <div class="column body-text">
+                        <h2 class="title is-size-2">Assignment 3: Cardboard Clips &amp; Nested Objects</h2>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/nested-objects.jpg">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box columns">
+                    <div class="column body-text">
+                        <h2 class="title is-size-3">Nested Objects</h2>
+                        <p>Did some experimenting with print-in-place nested objects.</p>
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/nested-boxes.jpg">
+                        </figure>
+                        <p>Experiment 1, was simple nested boxes and used Cura generated supports. Not entirely
+                            successful because one layer of supports could not be removed.</p>
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/twisty-thing.jpg">
+                        </figure>
+                        <p>Experiment 2, was a first attempt to print-in-place a simple nested object that could not
+                            come apart, but had movement and could be printed without supports. This was created
+                            manually in Rhino and is based on <a href="https://www.thingiverse.com/thing:2349065">thing
+                                bearing design</a>.</p>
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/spin-things.jpg">
+                        </figure>
+                        <p>Experiment 3 was parametrically designed as an extension of Experiment 2, with an arbitrary
+                            number of nested objects. These are printed without supports, but the prints all display
+                            significant "elephants foot" on the bottom and required cutting and trimming to free the
+                            parts.</p>
+                        <p>Looking at my Grasshopper files, there is a lot of space devoted to processing the
+                            relationships between a few key parameters before creating the primitives. In the future, I
+                            think this is a good case for using the Python component to process this all in one
+                            place.</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="title is-size-4">Files</h3>
+                        <ul>
+                            <li>Experiment 3: <a href="images/clips-n-nests/spin-things.gh">"Spin Things"
+                                Grasshopper</a></li>
+                            <li>Experiment 3: <a href="images/clips-n-nests/spin-things.stl">"Spin Things" STL</a></li>
+                            <li>Experiment 2: <a href="images/clips-n-nests/twisty-thing-mkII.stl">"Twisty Thing"
+                                STL</a></li>
+                            <li>Experiment 1: <a href="images/clips-n-nests/nested-boxes.gh">"Nested Boxes"
+                                Grasshopper</a></li>
+                            <li>Experiment 1: <a href="images/clips-n-nests/nested-boxes.stl">"Nested Boxes" STL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box columns">
+                    <div class="column body-text">
+                        <h2 class="title is-size-3">Cardboard Clips</h2>
+                        <p>These experiments are an attempt to create hexagonal cubbies by clipping the joints. The cardboard used is all from flats for cat-food cans, with a thickness of ~2.5-2.7 mm.</p>
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/hex-clips-101.jpg">
+                        </figure>
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/hex-clips-103.jpg">
+                        </figure>
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/hex-clips-102.jpg">
+                        </figure>
+                        <p>Experiment 1 is based on the cubbies already existing and are clipped together (so
+                            double-width cardboard at each join). The prototype cubbies were too irregular, and the
+                            clips were too shallow and too rigid. As the clips require a double thickness, they do not
+                            clip at the edges where only a single thickness exists.</p>
+                        <figure class="image is-16by9">
+                            <img src="images/clips-n-nests/hex-clips-201.jpg">
+                        </figure>
+                        <p>Experiment 2 will connect separate cardboard panels into hexagonal cubbies. It's a completely different design based on a curve created in Illustrator.</p>
+                        <p>Printing these clips is in progress, but initial tests were positive.</p>
+                    </div>
+                    <div class="column">
+                        <h3 class="title is-size-4">Files</h3>
+                        <ul>
+                            <li>Experiment 2: <a href="images/clips-n-nests/hex-clip-2.gh">"Hex Clips 2" Grasshopper</a></li>
+                            <li>Experiment 2: <a href="images/clips-n-nests/hex-clip-202.stl">"Hex Clips 2" STL</a></li>
+                            <li>Experiment 2: <a href="images/clips-n-nests/hex-clip-curve.svg">"Hex Clips 2" SVG</a></li>
+                            <li>Experiment 1: <a href="images/clips-n-nests/hex-clip-1.gh">"Hex Clips 1" Grasshopper</a></li>
+                            <li>Experiment 1: <a href="images/clips-n-nests/hex-clip-1.stl">"Hex Clips 1" STL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
+
