@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCDE Digital Fabrication Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .body-text p {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .composer-column figure {
+            margin-bottom: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+
+        <div class="level">
+            <div class="level-item-left"><a href="index.html">&larr; back</a></div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box columns">
+                    <div class="column body-text">
+                        <h2 class="title is-size-2">Assignment 4: Gettin' Meshy</h2>
+                        <p>Merge two separate meshes from 3rd party STLs, <i>if you dare!</i></p>
+                        <h3 class="title is-size-4">Files</h3>
+                        <ul>
+                            <li><a href="images/meshy/cat-balloon-top.stl">Cat Balloon Top (STL)</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-4by3">
+                            <img src="images/meshy/cat-balloon-2.jpg">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+
+                    <div class="columns">
+                        <div class="column is-4">
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/meshy-01.jpg">
+                            </figure>
+                        </div>
+                        <div class="column body-text">
+                            <h2 class="title is-size-3">Cat Ballooooon!</h2>
+                            <p>I started with an STL for a Lucky Cat and a Hot Air Balloon. The goal was to make a lucky cat head balloon.</p>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column is-4">
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/meshy-02.jpg">
+                            </figure>
+                        </div>
+                        <div class="column body-text">
+                            <p>The first step was to remove the head from the rest of the body. Fortunately, this model included a collar that made a convenient reference point to use.</p>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-4">
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/meshy-03.jpg">
+                            </figure>
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/meshy-04.jpg">
+                            </figure>
+                        </div>
+                        <div class="column body-text">
+                            <p>Because the cat model included a raised paw on one side, the next step was to split and mirror the head to remove that feature.</p>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-4">
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/meshy-05.jpg">
+                            </figure>
+                        </div>
+                        <div class="column body-text">
+                            <p>The head required some cleanup and manual adjustment / deletion of vertices to get a nice flat bottom. (Not pictured) the model also included an internal mesh, making it hollow.</p>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-4">
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/getting-meshy.jpg">
+                            </figure>
+                        </div>
+                        <div class="column body-text">
+                            <p>The top portion of the balloon was a separate mesh, so the balloon could be printed in multiple parts. After appropriate scaling, the two parts of my plan looked pretty good together.</p>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column body-text is-7">
+                            <p>This is where I started running into trouble, and stopped remembering to take screenshots. My original approach was to attempt to close the internal and external meshes of the head, then union them with the lower part of the balloon.</p>
+                            <p>No such luck. The poly count of the two meshes was very different, and I ran into multiple issues patching holes, and joining the two meshes. I had to abandon this approach. The high density of vertices was a big challenge as well.</p>
+                        </div>
+                        <div class="column is-5"></div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-4">
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/meshy-07.jpg">
+                            </figure>
+                            <figure class="image is-4by3">
+                                <img src="images/meshy/cat-balloon-2.jpg">
+                            </figure>
+                        </div>
+                        <div class="column body-text">
+                            <p>In the end, I removed the internal mesh entirely. I reduced the polycount of the head model by about 95%, then created a solid offset. This had significantly different levels of success on the two haves of the original mirrored mesh. I split the reduced mesh again, and created a new mirror from the "good side."</p>
+                            <p>This was all very time consuming and again required a lot of manual adjustment of vertices to reach matchable edges. In the end, the two parts did merge and produced a "good mesh."</p>
+                        </div>
+                    </div>
+
+                    <div class="column body-text is-7">
+                        <p>The <a href="images/meshy/cat-balloon-top.stl">final STL file</a>, includes only the top part of the balloon, which is the head and lower balloon envelope combined.</p>
+                    </div>
+                    <div class="column is-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
