@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HCDE Digital Fabrication Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .body-text p {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .composer-column figure {
+            margin-bottom: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+
+        <div class="level">
+            <div class="level-item-left"><a href="index.html">&larr; back</a></div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box columns">
+                    <div class="column body-text">
+                        <h2 class="title is-size-2">Assignment 7: Final Project Proposal</h2>
+                    </div>
+                    <div class="column">
+                        <!--                        <figure class="image is-square">-->
+                        <!--                            <img src="images/boom/slik-300dx-tripod.png">-->
+                        <!--                        </figure>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <h2 class="title is-size-3">Camera Boom</h2>
+                    <div class="columns">
+                        <div class="column"></div>
+                        <div class="column is-8">
+                            <figure class="image is-16by9">
+                                <img src="images/boom/diagram-1.png">
+                            </figure>
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                    <div class="columns">
+                        <div class="table-container">
+                            <table class="table is-striped is-hoverable">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Proposed Solution</th>
+                                    <th width="30%">Tasks</th>
+                                    <th>Alternate Solution</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <figure class="image is-square" style="min-width:40px">
+                                            <img src="images/boom/A.png">
+                                        </figure>
+                                    </td>
+                                    <td>Counterweight</td>
+                                    <td>Weight that balances out the weight of the camera, to prevent the boom from
+                                        toppling over.
+                                    </td>
+                                    <td>Printed threaded mount attached to the boom (screws or rivets), to fit a bottle.
+                                        The bottle can be filled with sand or other material for weight.
+                                    </td>
+                                    <td class="content">
+                                        <ul>
+                                            <li>Design bottle mount in CAD</li>
+                                            <li>Print and optimize design for fitting to the boom</li>
+                                        </ul>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <figure class="image is-square" style="min-width:40px">
+                                            <img src="images/boom/B.png">
+                                        </figure>
+                                    </td>
+                                    <td>Boom Vise</td>
+                                    <td>Coupling that allows the boom to slide through, but can be locked down to
+                                        prevent movement.
+                                    </td>
+                                    <td>
+                                        <p>Double sided threaded design based on a <a
+                                                href="https://www.firemountaingems.com/resources/videos/d91r"
+                                                target="_blank">pin vise</a>.</p>
+                                        <p>(<a href="#diagrams">see below)</a></p>
+                                    </td>
+                                    <td class="content">
+                                        <ul>
+                                            <li>Design vice components in CAD</li>
+                                            <li>Print proof-of-concept for design approval</li>
+                                            <li>Print and optimize design for fitting to the boom</li>
+                                        </ul>
+                                    </td>
+                                    <td>Cinching ring using a bolt with a hand-twist plastic handle.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <figure class="image is-square" style="min-width:40px">
+                                            <img src="images/boom/C.png">
+                                        </figure>
+                                    </td>
+                                    <td>Boom Mount</td>
+                                    <td>The attachment point between the tripod and the boom assembly.</td>
+                                    <td>Create a plate the same dimensions of the quickshoe plate to allow easy
+                                        removal.
+                                    </td>
+                                    <td class="content">
+                                        <ul>
+                                            <li>Reproduce quickshoe plate in CAD</li>
+                                            <li>Print and optimize design for fitting to the quickshoe socket</li>
+                                            <li>Test PLA durability for use</li>
+                                        </ul>
+                                    </td>
+                                    <td>Purchase a replacement quickshoe mount and attach it to the boom vise via the
+                                        mounting bolt.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <figure class="image is-square" style="min-width:40px">
+                                            <img src="images/boom/D.png">
+                                        </figure>
+                                    </td>
+                                    <td>Camera Mount</td>
+                                    <td>The attachment point between the camera and the end of the boom.</td>
+                                    <td>
+                                        <p>Spring-loaded quick-release vise mechanism to hold the cameras quickshow
+                                            plate.</p>
+                                        <p>(<a href="#diagrams">see below)</a></p>
+                                    </td>
+                                    <td class="content">
+                                        <ul>
+                                            <li>Design proof-of-concepts in CAD</li>
+                                            <li>Print test mechanisms</li>
+                                            <li>Design full-size mounting mechanism</li>
+                                            <li>Print and optimize design for fitting</li>
+                                            <li>Test PLA durability for use</li>
+                                        </ul>
+                                    </td>
+                                    <td>Print/purchase a camera mounting bolt and build a plate to hold that.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <figure class="image is-square" style="min-width:40px">
+                                            <img src="images/boom/E.png">
+                                        </figure>
+                                    </td>
+                                    <td>Camera Swivel</td>
+                                    <td>Joint to allow the camera angle to be set on the end of the boom.</td>
+                                    <td>Simple locking swivel joint using a bolt with a hand-twist plastic handle.</td>
+                                    <td class="content">
+                                        <ul>
+                                            <li>Design mechanism in CAD</li>
+                                            <li>Print and optimize design</li>
+                                        </ul>
+                                    </td>
+                                    <td>No swivel.</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="columns">
+                        <a name="diagrams"></a>
+                        <div class="column">
+                            <h2 class="title is-size-4">Boom Vise</h2>
+                            <figure class="image is-16by9">
+                                <img src="images/boom/diagram-2.png">
+                            </figure>
+                            <p>Each side of the boom vise is comprised of three nested parts. A threaded mount is
+                                attached to the boom mount. An inner sleeve fits into the threaded mount. A threaded
+                                cap, fits over the sleeve and screws onto the mount. When the cap is tightened, the
+                                sleeve compresses the boom, holding it in place.</p>
+                        </div>
+                        <div class="column">
+                            <h2 class="title is-size-4">Camera Mount</h2>
+                            <figure class="image is-16by9">
+                                <img src="images/boom/diagram-3.png">
+                            </figure>
+                            <p>Use a plate socket similar to the quickshoe socket on the tripod. Rather than a turnable
+                                locking screw, use a sliding plate held in place by two bolts and springs. The top would
+                                have a thumbplate to allow the locking wedge to be slid back for changing out the
+                                camera.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <h2 class="title is-size-3">Milestones</h2>
+                    <div class="columns">
+                        <div class="column table-container">
+                            <table class="table is-striped is-hoverable" width="100%">
+                                <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Milestone</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Present proposal</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Boom mount designed and validated</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Boom vise designed and validated</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Camera mount designed and validated</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Present progress</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="column table-container">
+                            <table class="table is-striped is-hoverable" width="100%">
+                                <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Milestone</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Production printing begins</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Camera swivel designed and validated, counterweight designed and validated</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Final assembly, complete documentation</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Deliver project</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <h2 class="title is-size-3">Materials</h2>
+                    <div class="columns">
+                        <div class="table-container">
+                            <table class="table is-striped is-hoverable" width="100%">
+                                <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th width="40%">Notes</th>
+                                    <th>Source</th>
+                                    <th>Required?</th>
+                                    <th>On Hand?</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Boom rod/pole</td>
+                                    <td>The main support for the boom. Initially considered conduit, but opted for a
+                                        thinner-walled shower-curtain rod to reduce weight.
+                                    </td>
+                                    <td>Hardware store</td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Bottle</td>
+                                    <td>Used for the counterweight. Opted for a steel bottle I had on-hand.</td>
+                                    <td></td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Rivets</td>
+                                    <td>Fasteners for attaching parts to each other and onto the boom rod. Opting for
+                                        rivets to have an excuse to acquire a riveting tool.
+                                    </td>
+                                    <td>Hardware store</td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Hand-twist bolts</td>
+                                    <td>Used for places with tightness is adjusted during use.</td>
+                                    <td>Hardware store</td>
+                                    <td>Yes</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Nuts, bolts, and washers</td>
+                                    <td>Fasteners used to attach parts and in the camera mount. Exact sizes and
+                                        availability TBD as design evolves.
+                                    </td>
+                                    <td>Hardware store</td>
+                                    <td>Yes</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Camera mounting bolts</td>
+                                    <td>Bolts specifically fitted to standard camera thread sizes. Needed for alternate
+                                        mounting solutions.
+                                    </td>
+                                    <td>Amazon, Glazer's Camera</td>
+                                    <td>No</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Springs</td>
+                                    <td>Springs for the camera mount. Will use spare bed-levelling springs from my Ender
+                                        3.
+                                    </td>
+                                    <td>Hardware store</td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+</section>
+</body>
+</html>
+
